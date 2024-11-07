@@ -1,0 +1,92 @@
+.header {
+  display: block;
+  margin: auto;
+}
+
+.button-login {
+  /* Buttons / border button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 18px 32px;
+gap: 10px;
+
+position: absolute;
+width: 144px;
+height: 60px;
+right: 40px;
+top: 10px;
+
+/* Colors/Orange */
+background: #FF9500;
+border-radius: 100px;
+
+/* ¡Haz clic sobre mí! */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+color: #131313;
+
+
+
+mix-blend-mode: normal;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+}
+
+.login_form{
+  /* Forms / Sign up */
+
+box-sizing: border-box;
+display: flex;
+flex-direction: column-reverse;
+position: absolute;
+width: 480px;
+height: 559px;
+left: calc(50% - 480px/2);
+top: 148px;
+
+background: #3A1849;
+border: 1px solid #CFCFCF;
+border-radius: 30px;
+
+}
+
+.Login__data{
+  /* Inputs / text input */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 60px;
+left: 40px;
+top: 120px;
+
+background: #FFFFFF;
+/* Text disabled */
+border: 1px solid #CFCFCF;
+border-radius: 30px;
+
+}
+.login__divider{
+  margin-bottom: 30px;
+  border: 1px solid white;
+  display: block;
+  
+}
