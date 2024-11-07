@@ -11,9 +11,6 @@ function App() {
       <Header
        />
       </>
-      
-     
-
     </div>
     
     

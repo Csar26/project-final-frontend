@@ -1,2 +1,3 @@
 @import url(./page.css);
-@import url(./components/Header/Header.css)
+@import url(./components/Header/Header.css);
+@import url(../src/vendor/fonts/Inter-Web/inter.css);
