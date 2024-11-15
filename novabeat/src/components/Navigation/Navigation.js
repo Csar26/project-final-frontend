@@ -9,11 +9,11 @@ export default function Navigation() {
     <div>
       <div className= 'navigation-home'>
       
-      <Link to='home' className='navigation-about'>
+      <Link to='/' className='navigation-about'>
       Home</Link>
       </div>
      <div className= 'navigation-about'> 
-      <Link to='about' className='navigation-about'>
+      <Link to='/about' className='navigation-about'>
      About</Link> </div>
 
  
