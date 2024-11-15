@@ -1,0 +1,100 @@
+.about {
+  display: block;
+  margin: auto;
+}
+
+.about_about{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 222px;
+height: 89px;
+left: calc(50% - 222px/2);
+top: 607px;
+
+background: #000000;
+border: 1px solid #000000;
+
+}
+
+.button-about {
+
+position: absolute;
+width: 144px;
+height: 60px;
+right: 40px;
+background: #FF9500;
+border-radius: 100px;
+
+}
+
+.place-logo{
+  display:flex;
+  justify-content: center;
+}
+
+.about_signup{
+box-sizing: border-box;
+position: absolute;
+width: 400px;
+height: 60px;
+left: calc(50% - 400px/2);
+top: 696px;
+
+background: #000000;
+border-radius: 30px;
+
+}
+
+
+.about_question{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+
+text-align: center;
+
+color: #FF8000;
+
+
+}
+
+.about-description{
+position: absolute;
+width: 440px;
+height: 504px;
+left: 48px;
+top: 155px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 50px;
+text-decoration: ;
+
+display: flex;
+align-items: center;
+
+color: #C2B1B1;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.about_image{
+ position: absolute;
+width: 450px;
+height: 219px;
+right: 6%;
+top: calc(50% - 219px/2 - 47.5px);
+
+}
+
+
+
+

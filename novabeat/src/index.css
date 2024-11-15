@@ -1,3 +1,9 @@
 @import url(./page.css);
-@import url(./components/Header/Header.css);
+@import url(./components/About/About.css);
 @import url(../src/vendor/fonts/Inter-Web/inter.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Prealoder/Preloader.css);
+@import url(./vendor/normalize.css);
+@import url(./components/SearchForm/SearchForm.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/Navigation/Navigation.css);

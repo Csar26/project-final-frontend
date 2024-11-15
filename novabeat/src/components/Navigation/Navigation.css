@@ -1,0 +1,42 @@
+.navigation-home{
+  gap: 28px;
+  right: 40px;
+  position: absolute;
+  width: 121px;
+  height: 80px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FF8000;
+  
+  
+  
+  
+    }
+    
+    .navigation-about{
+  gap: 28px;
+  position: absolute;
+  width: 122px;
+  height: 80px;
+  right: 120px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FF8000;
+  cursor: pointer;
+  
+  
+    }
+    

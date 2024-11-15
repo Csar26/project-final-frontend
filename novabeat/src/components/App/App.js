@@ -1,35 +1,42 @@
+import About from '../About/About';
 import Header from '../Header/Header';
+import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
+import Navigation from '../Navigation/Navigation';
+import Preloader from '../Prealoder/Prealoder';
+import api from '../../utils/api';
 import './App.css';
 import React from 'react';
+import { BrowserRouter, Route, Switch, Redirect, Link } from "react-router-dom";
 
 
 
 function App() {
+
   return (
     <div className='page'>
+      <BrowserRouter>
+      <Switch>
+      <Route path='/about'>
+             <Navigation/>
+            <About />
+          </Route>
+      
       <>
-      <Header
-       />
+      <Route path='/home'>
+      <Header/>
+      <Navigation/>
+      <Main/>
+      <Footer/>
+      </Route>
+    
       </>
+      </Switch>
+      </BrowserRouter>
     </div>
     
     
-    /*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
+    
   );
 }
 

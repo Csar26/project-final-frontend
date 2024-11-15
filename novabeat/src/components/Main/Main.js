@@ -1,13 +1,17 @@
 
+import React from "react";
+import Searchform from "../SearchForm/SearchForm";
+
 export default function Main () {
 
   return(
-    <Main>
+   <main className="main">
+    <Searchform/>
 
 
 
-      
-    </Main>
+
+   </main>
 
   )
 }

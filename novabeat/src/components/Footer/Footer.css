@@ -1,0 +1,44 @@
+
+.footer {
+  display: flex;
+  position: absolute;
+  width: 880px;
+  justify-content: flex-start;
+  margin: auto;
+  padding-bottom: 60px;
+  text-align:start;
+}
+.footer__author {
+  color: #867070;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  font-style: normal;
+  width: 318px;
+
+
+  /* © Novabeat 2024 */
+
+position: absolute;
+width: 172px;
+height: 22px;
+left: 46px;
+top: 733px;
+color: #867070;
+
+
+}
+@media screen and  (max-width: 880px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+    width: 318px;
+  }
+
+  
+  .footer__author {
+    text-align: center;
+  }
+}
