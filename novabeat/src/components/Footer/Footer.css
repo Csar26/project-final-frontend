@@ -1,12 +1,11 @@
 
 .footer {
   display: flex;
-  position: absolute;
-  width: 880px;
-  justify-content: flex-start;
-  margin: auto;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   text-align:start;
+  bottom: 40px;
+  position: fixed; bottom: 0; left: 48px;
+
 }
 .footer__author {
   color: #867070;
@@ -17,11 +16,6 @@
   text-align: left;
   font-style: normal;
   width: 318px;
-
-
-  /* © Novabeat 2024 */
-
-position: absolute;
 width: 172px;
 height: 22px;
 left: 46px;
