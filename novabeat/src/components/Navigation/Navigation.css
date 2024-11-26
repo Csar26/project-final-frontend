@@ -12,6 +12,7 @@
   align-items: center;
   text-align: center;
   color: #ff8000;
+  cursor: pointer;
 }
 
 .navigation-about {

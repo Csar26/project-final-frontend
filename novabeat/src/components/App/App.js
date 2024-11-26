@@ -4,22 +4,40 @@ import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import Navigation from "../Navigation/Navigation";
 import Preloader from "../Prealoder/Prealoder";
-import api from "../../utils/api";
+import thirdpartyapi from "../../utils/ThirdPartyApi";
 import "./App.css";
-import React from "react";
-import {
-  BrowserRouter,
-  Route,
-  Switch,
-  Redirect,
-  Link,
-  Routes,
-} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Redirect, Link, Routes } from "react-router-dom";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [artistData, setArtistData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchArtist = async (artistId) => {
+      try {
+        setIsLoading(true);
+        const data = await thirdpartyapi.getFetchData(artistId);
+        console.log("Artist data:", artistData);
+        setArtistData(data);
+        setIsLoading(false);
+      } catch (error) {
+        setError(error);
+        setIsLoading(false);
+      }
+    };
+    fetchArtist();
+  }, []);
+
   return (
     <div className="page">
       <Navigation />
+      {isLoading ? 
+      (
+      <Preloader />
+    ) :( 
+
       <Routes>
         <Route
           path="/"
@@ -33,6 +51,7 @@ function App() {
 
         <Route path="/about" element={<About />} />
       </Routes>
+      )}
       <Footer />
     </div>
   );

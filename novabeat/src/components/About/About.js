@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../Images/Novabeat_logo.svg';
 import BorderButton from '../Images/border_button.svg';
-import aboutImage from '../Images/about_image.svg';
+import AboutImage from '../Images/about_image.svg';
 
 
 export default function About(){
@@ -24,7 +24,7 @@ export default function About(){
       you're a longtime fan or new to their music, Novabeat offers a closer look 
       at the artists you love, bringing their stories and sounds to life</p>
 
-      <img src={aboutImage} alt='Logo Novabeat' className='about_image'/>
+      <img src={AboutImage} alt='Logo Novabeat' className='about_image'/>
 
 
     {/*<div className= 'about_about' src={BorderButton}>
