@@ -9,6 +9,8 @@ export default function Main () {
    <main className="main">
     <Searchform/>
     <InfoDisplay/>
+
+   
     
    </main>
 

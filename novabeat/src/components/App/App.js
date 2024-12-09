@@ -10,24 +10,12 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Redirect, Link, Routes } from "react-router-dom";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [artistData, setArtistData] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchArtist = async (artistId) => {
-      try {
-        setIsLoading(true);
-        const data = await thirdpartyapi.getFetchData(artistId);
-        console.log("Artist data:", artistData);
-        setArtistData(data);
-        setIsLoading(false);
-      } catch (error) {
-        setError(error);
-        setIsLoading(false);
-      }
-    };
-    fetchArtist();
+    thirdpartyapi.generateToken();
   }, []);
 
   return (
