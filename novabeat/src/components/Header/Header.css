@@ -28,5 +28,13 @@ background: #FF9500;
 border-radius: 100px;
   }
 
+
+  @media screen and (max-width: 767px) {
+
+    .place-logo_header{
+      top: 60px;
+    }
+    
+  }
   
   

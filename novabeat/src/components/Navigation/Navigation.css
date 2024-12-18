@@ -15,6 +15,7 @@
   cursor: pointer;
 }
 
+
 .navigation-about {
   gap: 28px;
   position: absolute;
@@ -32,3 +33,4 @@
   color: #ff8000;
   cursor: pointer;
 }
+

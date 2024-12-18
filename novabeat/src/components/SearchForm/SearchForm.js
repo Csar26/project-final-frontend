@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import thirdpartyapi from "../../utils/ThirdPartyApi";
+import React, { useState } from "react";
 
-export default function Searchform() {
+export default function SearchForm({ onArtistSearch }) {
   const [searchArtist, setSearchArtist] = useState("");
 
   const handleChange = (event) => {
@@ -10,16 +9,15 @@ export default function Searchform() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('handleSubmit', searchArtist);
-    thirdpartyapi.search(searchArtist).then((data) => {
-      console.log("APIA response", data);
-    });
+    if (searchArtist.trim()) {
+      onArtistSearch(searchArtist);
+    }
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="Search for Artist"></label>
+        <label htmlFor="search-input">Search for Artist</label>
         <input
           placeholder="Search your favorite artist"
           id="search-input"
@@ -28,10 +26,10 @@ export default function Searchform() {
           value={searchArtist}
           onChange={handleChange}
           className="search-form"
-          autoComplete="Artist"
+          autoComplete="off"
         />
+        <button className="search-form-button" type="submit">Search</button>
       </form>
     </div>
   );
 }
-
