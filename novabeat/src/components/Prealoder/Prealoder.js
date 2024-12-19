@@ -1,8 +1,6 @@
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Preloader = () => {
-
   const [isLoading, setIsLoading] = React.useState(true);
 
   useEffect(() => {

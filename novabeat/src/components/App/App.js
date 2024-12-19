@@ -8,7 +8,6 @@ import Navigation from "../Navigation/Navigation";
 import Preloader from "../Prealoder/Prealoder";
 import thirdpartyapi from "../../utils/ThirdPartyApi";
 
-
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [artistData, setArtistData] = useState(null);
@@ -20,9 +19,9 @@ function App() {
 
   const handleArtistSearch = (artistQuery) => {
     setIsLoading(true);
-    thirdpartyapi.search(artistQuery)
+    thirdpartyapi
+      .search(artistQuery)
       .then((data) => {
-  
         if (data.artists && data.artists.items.length > 0) {
           setArtistData(data.artists.items[0]);
           setError(null);
@@ -43,6 +42,8 @@ function App() {
   return (
     <div className="page">
       <Navigation />
+      <Header />
+
       {isLoading ? (
         <Preloader />
       ) : (
@@ -51,9 +52,8 @@ function App() {
             path="/"
             element={
               <>
-                <Header />
-                <Main 
-                  onArtistSearch={handleArtistSearch} 
+                <Main
+                  onArtistSearch={handleArtistSearch}
                   artistData={artistData}
                   error={error}
                 />

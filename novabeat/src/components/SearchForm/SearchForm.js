@@ -28,7 +28,9 @@ export default function SearchForm({ onArtistSearch }) {
           className="search-form"
           autoComplete="off"
         />
-        <button className="search-form-button" type="submit">Search</button>
+        <button className="search-form-button" type="submit">
+          Search
+        </button>
       </form>
     </div>
   );

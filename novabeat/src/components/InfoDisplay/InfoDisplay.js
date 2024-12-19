@@ -1,5 +1,5 @@
 import React from "react";
-import ArtistPhoto from "../Images/img_card_1.svg";
+import ArtistPhoto from "../../Images/img_card_1.svg";
 
 export default function InfoDisplay({ artistData, error }) {
   if (error) {
@@ -10,18 +10,15 @@ export default function InfoDisplay({ artistData, error }) {
     return <div>Search for an artist to display information</div>;
   }
 
-  const artistImage = artistData.images && artistData.images.length > 0 
-    ? artistData.images[0].url 
-    : ArtistPhoto;
+  const artistImage =
+    artistData.images && artistData.images.length > 0
+      ? artistData.images[0].url
+      : ArtistPhoto;
 
   return (
-    <div className='infodisplay'>
+    <div className="infodisplay">
       <div className="artist-info">
-        <img 
-          src={artistImage} 
-          alt="Artist" 
-          className="artist-image"
-        />
+        <img src={artistImage} alt="Artist" className="artist-image" />
         <h2 className="artist-name">{artistData.name}</h2>
         <p className="artist-followers">
           Followers: {artistData.followers.total.toLocaleString()}
@@ -33,4 +30,3 @@ export default function InfoDisplay({ artistData, error }) {
     </div>
   );
 }
-
