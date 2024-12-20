@@ -1,0 +1,36 @@
+.navigation-home {
+  gap: 28px;
+  right: 40px;
+  position: absolute;
+  height: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ff8000;
+  cursor: pointer;
+}
+
+
+.navigation-about {
+  gap: 28px;
+  position: absolute;
+  height: 80px;
+  right: 120px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ff8000;
+  cursor: pointer;
+}
+

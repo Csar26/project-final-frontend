@@ -1,0 +1,38 @@
+
+.footer {
+  display: flex;
+  padding-bottom: 10px;
+  text-align:start;
+  bottom: 40px;
+  position: fixed; bottom: 0; left: 48px;
+
+}
+.footer__author {
+  color: #867070;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  font-style: normal;
+  width: 318px;
+width: 172px;
+height: 22px;
+left: 46px;
+top: 733px;
+color: #867070;
+
+
+}
+@media screen and  (max-width: 880px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+    width: 318px;
+  }
+
+  
+  .footer__author {
+    text-align: center;
+  }
+}

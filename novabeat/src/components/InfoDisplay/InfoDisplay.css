@@ -1,0 +1,69 @@
+
+.artist-info{
+  display: grid;    
+  grid-row: ;
+  
+
+position: absolute;
+width: 400px;
+height: 580px;
+left: calc(50% - 400px/2);
+top: 300px;
+background: #41434E;
+border: 1px solid #CFCFCF;
+border-radius: 16px;
+
+}
+
+.artist-name{
+
+left: 11px;
+top: 192px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+
+color: #FFFFFF;
+
+
+}
+
+.artist-followers{
+
+left: 11px;
+top: 216px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: #FFFFFF;
+
+
+}
+
+.artist-genres{
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+}
+
+.artist-image{
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+
+}
+

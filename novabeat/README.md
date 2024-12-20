@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Novabeat - Artist Information Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Novabeat is a React-based web application that connects with the Spotify API to provide detailed information about music artists. The application manages authentication tokens and displays comprehensive artist data in an intuitive interface.
 
-## Available Scripts
+## Features
+- Artist search functionality
+- Display of artist details including:
+  - Profile information
+  - Follower count
+  - Genres
+  - Artist images
+- Responsive design for mobile and desktop viewing
+- Token-based authentication with Spotify API
 
-In the project directory, you can run:
+## Technical Stack
+- React.js
+- Spotify Web API
+- CSS3 for styling
+- React Router for navigation
 
-### `npm start`
+## Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
+- Spotify Developer account and API credentials
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+```bash
+git clone https://github.com/Csar26/project-final-frontend.git
+cd novabeat
+```
 
-### `npm test`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create a `.env` file in the root directory and add your Spotify API credentials:
+```
+REACT_APP_SPOTIFY_CLIENT_ID=your_client_id
+REACT_APP_SPOTIFY_CLIENT_SECRET=your_client_secret
+```
 
-### `npm run build`
+4. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Integration
+The application uses two types of tokens from the Spotify API:
+1. Client Credentials Token - For application authentication
+2. Access Token - For making API requests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Token Management
+- The application automatically handles token generation and renewal
+- Tokens are stored securely in localStorage
+- Token expiration is handled automatically
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
+```
+src/
+├── components/
+│   ├── About/
+│   ├── Header/
+│   ├── Main/
+│   ├── Navigation/
+│   └── SearchForm/
+├── utils/
+│   └── ThirdPartyApi.js
+└── App.js
+```
 
-### `npm run eject`
+## Key Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### SearchForm
+- Handles artist search functionality
+- Manages search input state
+- Triggers API calls
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### InfoDisplay
+- Displays artist information
+- Handles data formatting and presentation
+- Manages loading states
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ThirdPartyApi
+- Manages API connections
+- Handles token generation and management
+- Processes API responses
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Error Handling
+- Token expiration and renewal
+- Network request failures
+- Invalid search queries
+- Missing artist data
 
-## Learn More
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
+- Spotify Web API
+- React Documentation
+- [Add any other resources or acknowledgments]
 
-### Code Splitting
+## Autor
+Cesar Vivas.
+Web Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,0 +1,66 @@
+
+.login_form{
+  /* Forms / Sign up */
+
+box-sizing: border-box;
+display: flex;
+flex-direction: column-reverse;
+position: absolute;
+width: 480px;
+height: 559px;
+left: calc(50% - 480px/2);
+top: 200px;
+
+background: #3A1849;
+border: 1px solid #CFCFCF;
+border-radius: 30px;
+
+}
+
+.Login__data{
+  /* Inputs / text input */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 60px;
+left: 40px;
+top: 120px;
+
+background: #FFFFFF;
+/* Text disabled */
+border: 1px solid #CFCFCF;
+border-radius: 30px;
+
+}
+.login__divider{
+  margin-bottom: 30px;
+  border: 1px solid white;
+  display: block;
+  
+}
+
+.login-welcome{
+  /* Inscribirse */
+
+position: absolute;
+width: 180px;
+height: 40px;
+left: 40px;
+top: 40px;
+
+/* H3 */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
